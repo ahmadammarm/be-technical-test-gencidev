@@ -40,17 +40,32 @@ be-technical-test-gencidev/
 npm install
 ```
 
-2. Setup database & run migrations:
+2. Configure Environment Variable: Copy the file `.env.example` to `.env` and adjust it to your configuration:
+
+```sh
+cp .env.example .env
+```
+
+```
+PORT=3000
+DATABASE_URL="postgresql://[USERNAME]:[PASSWORD]@localhost:5432/gencidev?schema=public"
+JWT_SECRET=
+```
+
+You can generate your JWT secret key in <a href="https://jwtsecrets.com/#generator">here</a>
+
+
+3. Setup database & run migrations:
 ```bash
 npx prisma migrate dev --name init
 ```
 
-3. Run development server:
+4. Run development server:
 ```bash
 npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to run the application.
+Server will run at: [http://localhost:3000](http://localhost:3000)
 
 You can also se the API Documentation here : 
 <a href="https://documenter.getpostman.com/view/28586929/2sB3BLkTbu">Backend Test Gencidev API Documentation</a>
