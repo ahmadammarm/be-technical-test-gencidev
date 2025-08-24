@@ -52,7 +52,7 @@ DATABASE_URL="postgresql://[USERNAME]:[PASSWORD]@localhost:5432/gencidev?schema=
 JWT_SECRET=
 ```
 - Config your postgres connection with your own postgres username and password
-- You can generate your JWT secret key in <a href="https://jwtsecrets.com/#generator" target="blank">here</a>
+- You can generate your JWT secret key in <a href="https://jwtsecrets.com/#generator">here</a>
 
 
 3. Setup database & run migrations:
@@ -68,4 +68,4 @@ npm start
 Server will run at: [http://localhost:3000](http://localhost:3000)
 
 You can also se the API Documentation here : 
-<a href="https://documenter.getpostman.com/view/28586929/2sB3BLkTbu" target="blank">Backend Test Gencidev API Documentation</a>
+<a href="https://documenter.getpostman.com/view/28586929/2sB3BLkTbu">Backend Test Gencidev API Documentation</a>
