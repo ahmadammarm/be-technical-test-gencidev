@@ -51,8 +51,8 @@ PORT=3000
 DATABASE_URL="postgresql://[USERNAME]:[PASSWORD]@localhost:5432/gencidev?schema=public"
 JWT_SECRET=
 ```
-
-You can generate your JWT secret key in <a href="https://jwtsecrets.com/#generator">here</a>
+- Config your postgres connection with your own postgres username and password
+- You can generate your JWT secret key in <a href="https://jwtsecrets.com/#generator">here</a>
 
 
 3. Setup database & run migrations:
