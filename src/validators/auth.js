@@ -1,4 +1,4 @@
-import { check } from 'express-validator';
+import {check} from 'express-validator';
 
 export const signupValidate = [
   check('name').notEmpty().withMessage('Name is required').trim(),
@@ -11,10 +11,6 @@ export const signupValidate = [
     .normalizeEmail(),
 
   check('password')
-    .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).*$/)
-    .withMessage(
-      'Password must contain at least one uppercase letter, one lowercase letter, and one number',
-    )
     .isLength({min: 8})
     .withMessage('Password must be at least 8 characters long')
     .notEmpty()
@@ -31,4 +27,3 @@ export const signinValidate = [
 
   check('password').notEmpty().withMessage('Password is required'),
 ];
-

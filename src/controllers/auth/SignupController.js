@@ -1,3 +1,4 @@
+import hashPassword from '../../lib/hashPassword.js';
 import prisma from '../../lib/prisma.js';
 
 const SignupController = async (request, response, next) => {
